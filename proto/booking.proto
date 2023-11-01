@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package order;
+
+service BokingService {
+  rpc CreateBooking (CreateBookingRequest) returns (CreateBookingResponse) {}
+}
+
+message CreateBookingRequest {
+  int32 hotelId = 1;
+  int32 rooms = 2;
+  int32 userId = 3;
+}
+
+message CreateBookingResponse {
+  int32 status = 1;
+  repeated string error = 2;
+  int32 id = 3;
+}
