@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package order;
+package booking;
 
 service BokingService {
   rpc CreateBooking (CreateBookingRequest) returns (CreateBookingResponse) {}
