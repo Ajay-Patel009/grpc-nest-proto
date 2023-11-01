@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package booking;
 
-service BokingService {
+service BookingService {
   rpc CreateBooking (CreateBookingRequest) returns (CreateBookingResponse) {}
 }
 
