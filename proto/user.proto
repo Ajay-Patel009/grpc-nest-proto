@@ -15,6 +15,7 @@ message RegisterRequest {
   string email = 2;
   string password = 3;
   int32 phone=4;
+  string address=5;
   
 }
 
