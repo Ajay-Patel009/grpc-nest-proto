@@ -11,7 +11,7 @@ service UserService {
 // Register
 
 message RegisterRequest {
-  string name=1
+  string name=1;
   string email = 2;
   string password = 3;
   int32 phone=4;
