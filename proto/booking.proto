@@ -10,6 +10,7 @@ message CreateBookingRequest {
   int32 hotelId = 1;
   int32 rooms = 2;
   int32 userId = 3;
+  
 }
 
 message CreateBookingResponse {
