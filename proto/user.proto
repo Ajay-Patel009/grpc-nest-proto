@@ -6,7 +6,7 @@ service UserService {
   rpc Register (RegisterRequest) returns (RegisterResponse) {}
   rpc Login (LoginRequest) returns (LoginResponse) {}
   rpc Validate (ValidateRequest) returns (ValidateResponse) {}
-  rpc Logout (LoginRequest) returns (LoginResponse){}
+  rpc Logout (LogoutRequest) returns (LogoutResponse){}
 }
 
 // Register
@@ -42,7 +42,7 @@ message LogoutRequest {
   string userId=1;
 }
 message LogoutResponse {
-  int32 status;
+  int32 status=1;
 }
 
 // Validate
