@@ -37,6 +37,13 @@ message LoginResponse {
   string token = 3;
 }
 
+message LogoutRequest {
+  string userId=1;
+}
+message LogoutResponse {
+  int32 status;
+}
+
 // Validate
 
 message ValidateRequest {
